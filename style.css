@@ -9,8 +9,7 @@
 
 body {
   font-family: "YuseiMagic", sans-serif;
-  background-color: #f9f9f9;
-
+  background-color: #ffffff;
   color: #000;
 }
 
@@ -30,12 +29,11 @@ main {
   display: flex;
   flex-direction: column;
 }
-
-.welkom {
+/* voor het zigzag patroon heb ik een generator gebruikt*/
+.top {
   background-color: #3b6437;
   padding: 1em;
   gap: 1em;
-  align-items: flex-start;
   --mask: conic-gradient(
       from -52.5deg at bottom,
       #0000,
@@ -45,10 +43,11 @@ main {
     50%/2.61em 100%;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+  
 }
 
 section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 1em;
   font-size: 1.5em;
   color: white;
   flex: 1;
@@ -58,12 +57,14 @@ section p {
   font-size: 1em;
   margin-bottom: 1em;
   color: #ffffff;
-  flex: 1;
+  
 }
 section img {
-  width: 8em;
+  width: 9em;
   height: auto;
   margin-bottom: 0.5em;
+  margin-left: 2.5em;
+
 }
 
 button {
@@ -74,21 +75,15 @@ button {
   font-size: 1em;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 2em;
 }
-
+button a{
+    color: #ffffff; 
+    text-decoration: none; 
+}
 article {
-  background-color: #ffffff;
   padding: 2em;
   font-size: 1em;
-  --mask: conic-gradient(
-      from -52.5deg at bottom,
-      #0000,
-      #000 1deg 104deg,
-      #0000 105deg
-    )
-    50%/2.61em 100%;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
 }
 
 .waaromVegan {
@@ -105,6 +100,60 @@ article {
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
+#menu section{
+    padding: 1em;
+    text-decoration: none;
+    
+}
+#menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#menu h1{
+    color: #ffffff;
+    padding: 1em;
+}
+#menu h2 {
+    margin-bottom: 1em;
+    font-size: 1.7em;
+    color: black;
+    flex: 1;
+    padding: 1em;
+    text-align: center;
+  }
+  #menu h3 {
+    font-size: 1.3em;
+    margin-left: 2em;
+    padding: 1em;
+    color: #3b6437;
+  }
+  
+  #waaromVegan {
+    background-image: url('images/achtergrond.png');
+  }
+  #waaromVegan h1{
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+  }
+.een{
+    color:#3b6437;
+    padding: 1em;
+    background-color: #ffffff;
+    margin-bottom: 3em;
+    margin-left: 3em; 
+}
+.tweede{
+    color:#3b6437;
+    padding: 1em;
+    background-color: #ffffff;
+    margin-bottom: 3em;
+    margin-right: 3em;
+}
+
+
 /* Footer */
 footer {
   background-color: #664330;
@@ -114,12 +163,16 @@ footer {
 }
 
 footer h2 {
-  font-size: 1em;
+  font-size: 1.3em;
+  padding: 1em;
 }
 footer ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
   
 }
 footer img {
